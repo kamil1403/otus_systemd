@@ -33,12 +33,10 @@
 ```bash
 
 1. **==Конфиг с переменными:==**
-```bash
 cd /etc/default/
 nano watchlog
 
 2. **==Вставить и сохранить:==**
-```bash
 # Configuration file for my watchlog service
 # Place it to /etc/default
 # File and word in that file that we will be monit
@@ -46,17 +44,15 @@ WORD="ALERT"
 LOG=/var/log/watchlog.log
 
 3. **==Лог-файл и тестовые строки (обязательно с ALERT):==**
-```bash
 cd /var/log/
 nano watchlog.log
 
 4. **==Скрипт:==**
-```bash
+bash
 cd /opt
 nano watchlog.sh
 
 5. **==Вставить и сохранить:==**
-```bash
 #!/bin/bash
 WORD=$1
 LOG=$2
@@ -69,16 +65,13 @@ exit 0
 fi
 
 6. **==Сделать исполняемым:==**
-```bash
 chmod +x /opt/watchlog.sh
 
 7. **==Юнит сервиса:==**
-```bash
 cd /etc/systemd/system
 nano watchlog.service
 
 8. **==Вставить и сохранить:==**
-```bash
 [Unit]
 Description=My watchlog service
 [Service]
@@ -87,11 +80,9 @@ EnvironmentFile=/etc/default/watchlog
 ExecStart=/opt/watchlog.sh $WORD $LOG
 
 9. **==Юнит таймера:==**
-```bash
 nano watchlog.timer
 
 10. **==Вставить и сохранить:==**
-```bash
 [Unit]
 Description=Run watchlog script every 30 second
 [Timer]
@@ -102,13 +93,11 @@ Unit=watchlog.service
 WantedBy=multi-user.target
 
 11. **==Запуск:==**
-```bash
 systemctl daemon-reload
 systemctl start watchlog.service
 systemctl start watchlog.timer
 
 12. **==Проверка результата:==**
-```bash
 tail -n 1000 /var/log/syslog | grep word
 
 ***Готово. Если увидим строку*** `***I found word, Master!***` ***- значит сервис работает.***
