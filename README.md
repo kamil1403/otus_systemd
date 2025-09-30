@@ -32,27 +32,31 @@
 
 ```bash
 # ----------------------------- STEP 1 -----------------------------
-# 1.Конфиг с переменными:
+# Конфиг с переменными:
 cd /etc/default/
 nano watchlog
 
-# 2.Вставить и сохранить:
+# ----------------------------- STEP 2 -----------------------------
+# Вставить и сохранить:
 # Configuration file for my watchlog service
 # Place it to /etc/default
 # File and word in that file that we will be monit
 WORD="ALERT"
 LOG=/var/log/watchlog.log
 
-# 3.Лог-файл и тестовые строки (обязательно с ALERT):
+# ----------------------------- STEP 3 -----------------------------
+# Лог-файл и тестовые строки (обязательно с ALERT):
 cd /var/log/
 nano watchlog.log
 
-# 4.Скрипт:
+# ----------------------------- STEP 4 -----------------------------
+# Скрипт:
 bash
 cd /opt
 nano watchlog.sh
 
-# 5.Вставить и сохранить:
+# ----------------------------- STEP 5 -----------------------------
+# Вставить и сохранить:
 #!/bin/bash
 WORD=$1
 LOG=$2
@@ -64,14 +68,17 @@ else
 exit 0
 fi
 
-# 6.Сделать исполняемым:
+# ----------------------------- STEP 6 -----------------------------
+# Сделать исполняемым:
 chmod +x /opt/watchlog.sh
 
-# 7.Юнит сервиса:
+# ----------------------------- STEP 7 -----------------------------
+# Юнит сервиса:
 cd /etc/systemd/system
 nano watchlog.service
 
-# 8.Вставить и сохранить:
+# ----------------------------- STEP 8 -----------------------------
+# ставить и сохранить:
 [Unit]
 Description=My watchlog service
 [Service]
@@ -79,10 +86,12 @@ Type=oneshot
 EnvironmentFile=/etc/default/watchlog
 ExecStart=/opt/watchlog.sh $WORD $LOG
 
-# 9.Юнит таймера:
+# ----------------------------- STEP 9 -----------------------------
+# Юнит таймера:
 nano watchlog.timer
 
-# 10.Вставить и сохранить:
+# ----------------------------- STEP 10 ----------------------------
+# Вставить и сохранить:
 [Unit]
 Description=Run watchlog script every 30 second
 [Timer]
@@ -92,14 +101,17 @@ Unit=watchlog.service
 [Install]
 WantedBy=multi-user.target
 
-# 11.Запуск:
+# ----------------------------- STEP 11 ----------------------------
+# Запуск:
 systemctl daemon-reload
 systemctl start watchlog.service
 systemctl start watchlog.timer
 
-# 12.Проверка результата:
+# ----------------------------- STEP 12 ----------------------------
+# Проверка результата:
 tail -n 1000 /var/log/syslog | grep word
 
+# ----------------------------- RESULT -----------------------------
 # Готово. Если увидим строку I found word, Master! - значит сервис работает.
 ```
 
