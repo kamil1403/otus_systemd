@@ -1,6 +1,6 @@
 # otus_systemd
 <p align="center">
-  <img src="https://github.com/kamil1403/otus_LVM-1/blob/main/screenshots/lvm.jpg" alt="RAID Banner" width="800">
+  <img src="[https://github.com/kamil1403/otus_LVM-1/blob/main/screenshots/lvm.jpg](https://github.com/kamil1403/otus_systemd/blob/main/screenshots/banner.jpeg)" alt="RAID Banner" width="800">
 </p>
 
 <h1 align="center">otus_systemd</h1>
