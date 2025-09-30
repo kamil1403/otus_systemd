@@ -1,7 +1,8 @@
 # otus_systemd
 <p align="center">
-  <img src="https://github.com/kamil1403/otus_systemd/blob/main/screenshots/banner.jpeg" alt="RAID Banner" width="70%">
+  <img src="https://github.com/kamil1403/otus_systemd/blob/main/screenshots/banner.jpeg" alt="RAID Banner" width="800">
 </p>
+
 
 <h1 align="center">otus_systemd</h1>
 <p align="center">Дата: 30-09-2025<br>Автор: Kamil Ibragimov</p>
