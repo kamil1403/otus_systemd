@@ -14,7 +14,7 @@
 
 Результат:   
 • Создал сервис, отрабатывает успешно. Результат см. на скриншоте 🖼️ ["watchlog.timer"](https://github.com/kamil1403/otus_systemd/blob/main/screenshots/watchlog.timer.png)     
-
+• Установил spawn-fcgi и создал unit-файл. Результат см. на скриншоте 🖼️ ["spawn-fcgi"](https://github.com/kamil1403/otus_systemd/blob/main/screenshots/watchlog.timer.png)     
 
 ## 🧭 Оглавление
 
