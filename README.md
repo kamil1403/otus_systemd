@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/kamil1403/otus_systemd/blob/main/screenshots/banner.jpeg" alt="RAID Banner" width="50%">
+  <img src="https://github.com/kamil1403/otus_systemd/blob/main/screenshots/banner.jpeg" alt="RAID Banner" width="70%">
 </p>
 
 
