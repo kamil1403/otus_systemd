@@ -112,7 +112,7 @@ systemctl start watchlog.timer
 tail -n 1000 /var/log/syslog | grep word
 
 # ----------------------------- RESULT -----------------------------
-# Готово. Если увидим строку I found word, Master! - значит сервис работает.
+# Готово. Если увидим строку: "I found word, Master!" - значит сервис работает.
 ```
 
 ---
