@@ -118,11 +118,60 @@ tail -n 1000 /var/log/syslog | grep word
 ## ⚙️ Установить spawn-fcgi и создать unit-файл 
 
 ```bash
-# Форматирование логического тома
-mkfs.ext4 /dev/otus/test
-# Монтирование логического тома
-mkdir /lvm
-mount /dev/otus/test /lvm
+# ----------------------------- STEP 1 -----------------------------
+# Устанавливаем spawn-fcgi и необходимые для него пакеты:
+apt install spawn-fcgi php php-cgi php-cli \ apache2 libapache2-mod-fcgid -y
+
+# ----------------------------- STEP 2 -----------------------------
+# Скрипт:
+cd /etc/spawn-fcgi
+nano fcgi.conf
+
+# ----------------------------- STEP 3 -----------------------------
+# Вставить и сохранить:
+# You must set some working options before the "spawn-fcgi" service will work.
+# If SOCKET points to a file, then this file is cleaned up by the init script.
+#
+# See spawn-fcgi(1) for all possible options.
+#
+# Example :
+SOCKET=/var/run/php-fcgi.sock
+OPTIONS="-u www-data -g www-data -s $SOCKET -S -M 0600 -C 32 -F 1 -- /usr/bin/php-cgi"
+
+# ----------------------------- STEP 3 -----------------------------
+# Юнит сервиса:
+cd /etc/systemd/system
+nano spawn-fcgi.service
+
+# ----------------------------- STEP 4 -----------------------------
+# Вставить и сохранить:
+[Unit]
+Description=Spawn-fcgi startup service by Otus
+After=network.target
+
+[Service]
+Type=simple
+PIDFile=/var/run/spawn-fcgi.pid
+EnvironmentFile=/etc/spawn-fcgi/fcgi.conf
+ExecStart=/usr/bin/spawn-fcgi -n $OPTIONS
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target
+
+# ----------------------------- STEP 5 ----------------------------
+# Запуск:
+systemctl daemon-reload
+systemctl start spawn-fcgi
+systemctl start spawn-fcgi
+
+# ----------------------------- STEP 12 ----------------------------
+# Проверка результата:
+tail -n 1000 /var/log/syslog | grep word
+
+# ----------------------------- RESULT -----------------------------
+# Готово. Если увидим строку: "active (running)" - значит сервис работает.
+
 ```
 
 ---
