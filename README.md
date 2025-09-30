@@ -6,7 +6,7 @@
 <h1 align="center">otus_systemd</h1>
 <p align="center">Дата: 30-09-2025<br>Автор: Kamil Ibragimov</p>
 
-## Домашнее задание: работа с LVM
+## Домашнее задание: systemd - создание unit-файла
 Задание:   
 • Написать service, который будет раз в 30 секунд мониторить лог на предмет наличия ключевого слова (файл лога и ключевое слово должны задаваться в /etc/default);
 • Установить spawn-fcgi и создать unit-файл (spawn-fcgi.sevice) с помощью переделки init-скрипта (https://gist.github.com/cea2k/1318020);
