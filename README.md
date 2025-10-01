@@ -1,3 +1,7 @@
+![Lesson](https://img.shields.io/badge/Lesson-otus__systemd-blue)
+![Author](https://img.shields.io/badge/Author-Kamil%20Ibragimov-green)
+![Date](https://img.shields.io/badge/Date-01.10.2025-yellow)
+
 <p align="center">
   <img src="https://github.com/kamil1403/otus_systemd/blob/main/screenshots/banner.jpeg" alt="Banner" width="65%">
 </p>
