@@ -1,4 +1,10 @@
 <p align="center">
+  <img height="40" src="https://img.shields.io/badge/Lesson-otus__systemd-1f6feb?style=for-the-badge&labelColor=0b1220&logo=linux&logoColor=white">&nbsp;
+  <img height="40" src="https://img.shields.io/badge/Author-Kamil%20Ibragimov-16a34a?style=for-the-badge&labelColor=0b1220&logo=github&logoColor=white">&nbsp;
+  <img height="40" src="https://img.shields.io/badge/Date-01.10.2025-f59e0b?style=for-the-badge&labelColor=0b1220">
+</p>
+
+<p align="center">
   <img src="https://github.com/kamil1403/otus_systemd/blob/main/screenshots/banner.jpeg" alt="Banner" width="65%">
 </p>
 
