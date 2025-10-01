@@ -219,13 +219,14 @@ KillMode=mixed
 [Install]
 WantedBy=multi-user.target
 
+# ----------------------------- STEP 4 -----------------------------
 # Два конфига из базового (/etc/nginx/nginx-first.conf, /etc/nginx/nginx-second.conf):
 cd /etc/nginx/nginx.conf /etc/nginx/nginx-first.conf
 nano /etc/nginx/nginx-first.conf
 cp /etc/nginx/nginx.conf /etc/nginx/nginx-second.conf
 nano /etc/nginx/nginx-second.conf
 
-# ----------------------------- STEP 4 -----------------------------
+# ----------------------------- STEP 5 -----------------------------
 # Минимально меняю (пример для nginx-first и nginx-second). У каждого инстанса свой PID-файл и свой порт:
 pid /run/nginx-first.pid;
 http {
@@ -243,7 +244,7 @@ http {
     # include /etc/nginx/sites-enabled/*;
 }
 
-# ----------------------------- STEP 5 -----------------------------
+# ----------------------------- STEP 6 -----------------------------
 # Старт и проверка:
 # Если мы видим две группы процессов Nginx, то все в порядке. 
 # Если сервисы не стартуют, смотрим их статус, ищем ошибки, проверяем ошибки в /var/log/nginx/error.log, а также в journalctl -u nginx@first.
@@ -252,12 +253,12 @@ systemctl start nginx@second
 systemctl status nginx@first
 systemctl status nginx@second
 
-# ----------------------------- STEP 6 -----------------------------
+# ----------------------------- STEP 7 -----------------------------
 # Проверяю порты и процессы:
 ss -tnulp | grep nginx
 ps afx | grep nginx
 
-# ----------------------------- STEP 7 -----------------------------
+# ----------------------------- STEP 8 -----------------------------
 # Если что-то не взлетело:
 journalctl -u nginx@first -n 100 --no-pager
 tail -n 100 /var/log/nginx/error.log
