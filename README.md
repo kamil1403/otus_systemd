@@ -4,6 +4,10 @@
   <img height="38" src="https://img.shields.io/badge/Date-01.10.2025-f59e0b?style=for-the-badge">
 </p>
 
+[![Lesson](https://img.shields.io/badge/Lesson-otus__systemd-blue?style=for-the-badge)](#домашнее-задание-systemd---создание-unit-файла)
+[![Author](https://img.shields.io/badge/Author-Kamil%20Ibragimov-green?style=for-the-badge)](https://github.com/kamil1403)
+[![Date](https://img.shields.io/badge/Date-01.10.2025-yellow?style=for-the-badge)](#)
+
 
 <p align="center">
   <img src="https://github.com/kamil1403/otus_systemd/blob/main/screenshots/banner.jpeg" alt="Banner" width="65%">
