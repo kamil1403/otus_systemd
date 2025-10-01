@@ -15,7 +15,7 @@
 Результат:   
 • Создал сервис, отрабатывает успешно. Результат см. на скриншоте 🖼️ ["watchlog.timer"](https://github.com/kamil1403/otus_systemd/blob/main/screenshots/watchlog.timer.png)     
 • Установил spawn-fcgi и создал unit-файл. Результат см. на скриншоте 🖼️ ["spawn-fcgi"](https://github.com/kamil1403/otus_systemd/blob/main/screenshots/spawn.png)     
-• Доработать unit-файл Nginx (nginx.service) для запуска нескольких инстансов. Результат см. на скриншоте 🖼️ ["nginx"](https://github.com/kamil1403/otus_systemd/blob/main/screenshots/spawn.png)     
+• Доработать unit-файл Nginx (nginx.service) для запуска нескольких инстансов. Результат см. на скриншоте 🖼️ ["ng"](https://github.com/kamil1403/otus_systemd/blob/main/screenshots/spawn.png)     
 
 ## 🧭 Оглавление
 
@@ -177,7 +177,7 @@ tail -n 1000 /var/log/syslog | grep word
 
 ---
 
-<a id="nginx"></a>
+<a id="ng"></a>
 ## 🌐 Доработать unit-файл Nginx (nginx.service) для запуска нескольких инстансов
 
 ```bash
