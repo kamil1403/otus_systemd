@@ -1,4 +1,11 @@
 <p align="center">
+  <img height="38" src="https://img.shields.io/badge/Lesson-otus__systemd-1f6feb?style=for-the-badge">&nbsp;
+  <img height="38" src="https://img.shields.io/badge/Author-Kamil%20Ibragimov-16a34a?style=for-the-badge">&nbsp;
+  <img height="38" src="https://img.shields.io/badge/Date-01.10.2025-f59e0b?style=for-the-badge">
+</p>
+
+
+<p align="center">
   <img src="https://github.com/kamil1403/otus_systemd/blob/main/screenshots/banner.jpeg" alt="Banner" width="65%">
 </p>
 
