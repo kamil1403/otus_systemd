@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/<USER>/<REPO>/main/badges/lesson.svg">
+  <img src="https://github.com/kamil1403/svg/blob/main/svg/lesson.svg">
 </p>
 
 
