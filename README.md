@@ -10,6 +10,9 @@
 <h1 align="center">otus_systemd</h1>
 <p align="center">Дата: 01-10-2025<br>Автор: Kamil Ibragimov</p>
 
+![Lesson](https://img.shields.io/badge/Lesson-otus__systemd-blue)
+![Author](https://img.shields.io/badge/Author-Kamil%20Ibragimov-green)
+![Date](https://img.shields.io/badge/Date-01.10.2025-yellow)
 ## Домашнее задание: systemd - создание unit-файла
 ### 📌 Задание:   
 - [ ] Написать service, который будет раз в 30 секунд мониторить лог на предмет наличия ключевого слова;   
