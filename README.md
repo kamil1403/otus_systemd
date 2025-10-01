@@ -3,9 +3,9 @@
 </p>
 
 ## Домашнее задание: systemd - создание unit-файла
-![Lesson](https://img.shields.io/badge/Lesson-otus__systemd-blue?style=for-the-badge")
-![Author](https://img.shields.io/badge/Author-Kamil%20Ibragimov-green)
-![Date](https://img.shields.io/badge/Date-01.10.2025-yellow)
+![Lesson](https://img.shields.io/badge/Lesson-otus__systemd-blue?style=for-the-badge)
+![Author](https://img.shields.io/badge/Author-Kamil%20Ibragimov-green?style=for-the-badge)
+![Date](https://img.shields.io/badge/Date-01.10.2025-yellow?style=for-the-badge")
 ### 📌 Задание:   
 - [ ] Написать service, который будет раз в 30 секунд мониторить лог на предмет наличия ключевого слова;   
 - [ ] Установить spawn-fcgi и создать unit-файл (spawn-fcgi.sevice) с помощью переделки init-скрипта;   
