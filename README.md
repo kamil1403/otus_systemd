@@ -2,11 +2,10 @@
   <img src="https://github.com/kamil1403/otus_systemd/blob/main/screenshots/banner.jpeg" alt="Banner" width="65%">
 </p>
 
-
+## Домашнее задание: systemd - создание unit-файла
 ![Lesson](https://img.shields.io/badge/Lesson-otus__systemd-blue)
 ![Author](https://img.shields.io/badge/Author-Kamil%20Ibragimov-green)
 ![Date](https://img.shields.io/badge/Date-01.10.2025-yellow)
-## Домашнее задание: systemd - создание unit-файла
 ### 📌 Задание:   
 - [ ] Написать service, который будет раз в 30 секунд мониторить лог на предмет наличия ключевого слова;   
 - [ ] Установить spawn-fcgi и создать unit-файл (spawn-fcgi.sevice) с помощью переделки init-скрипта;   
