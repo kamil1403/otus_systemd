@@ -4,7 +4,7 @@
 
 
 <h1 align="center">otus_systemd</h1>
-<p align="center">Дата: 30-09-2025<br>Автор: Kamil Ibragimov</p>
+<p align="center">Дата: 01-10-2025<br>Автор: Kamil Ibragimov</p>
 
 ## Домашнее задание: systemd - создание unit-файла
 Задание:   
