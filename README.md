@@ -1,11 +1,10 @@
-![Lesson](https://img.shields.io/badge/Lesson-otus__systemd-0A84FF?style=for-the-badge&logo=linux&logoColor=white&labelColor=111827)
-![Author](https://img.shields.io/badge/Author-Kamil%20Ibragimov-10B981?style=for-the-badge&logo=github&logoColor=white&labelColor=111827)
-![Date](https://img.shields.io/badge/Date-01.10.2025-F59E0B?style=for-the-badge&logo=calendar&logoColor=white&labelColor=111827)
-
 <p align="center">
   <img src="https://github.com/kamil1403/otus_systemd/blob/main/screenshots/banner.jpeg" alt="Banner" width="65%">
 </p>
 
+![Lesson](https://img.shields.io/badge/Lesson-otus__systemd-0A84FF?style=for-the-badge&logo=linux&logoColor=white&labelColor=111827)
+![Author](https://img.shields.io/badge/Author-Kamil%20Ibragimov-10B981?style=for-the-badge&logo=github&logoColor=white&labelColor=111827)
+![Date](https://img.shields.io/badge/Date-01.10.2025-F59E0B?style=for-the-badge&logo=calendar&logoColor=white&labelColor=111827)
 ## Домашнее задание: systemd - создание unit-файла
 ![Lesson](https://img.shields.io/badge/Lesson-otus__systemd-0A84FF?style=for-the-badge&logo=linux&logoColor=white&labelColor=111827)
 ![Author](https://img.shields.io/badge/Author-Kamil%20Ibragimov-10B981?style=for-the-badge&logo=github&logoColor=white&labelColor=111827)
