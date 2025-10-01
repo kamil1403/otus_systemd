@@ -1,5 +1,7 @@
 <p align="center">
   <img src="https://github.com/kamil1403/svg/blob/main/svg/lesson.svg">
+  <img src="https://github.com/kamil1403/svg/blob/main/svg/author.svg">
+  <img src="https://github.com/kamil1403/svg/blob/main/svg/badges.svg">
 </p>
 
 
