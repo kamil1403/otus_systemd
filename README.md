@@ -265,3 +265,13 @@ tail -n 100 /var/log/nginx/error.log
 ```
 
 ---
+
+### 📋 План
+- [ ] Service + timer (watchlog)
+- [ ] spawn-fcgi + unit
+- [ ] Nginx @first/@second
+
+### ✅ Что сделано
+- [x] Service + timer (скрин: `watchlog.timer`)
+- [x] spawn-fcgi (скрин: `spawn-fcgi`)
+- [x] Nginx инстансы (скрин: `nginx`)
