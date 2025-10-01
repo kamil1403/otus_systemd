@@ -3,7 +3,7 @@
 </p>
 
 ## Домашнее задание: systemd - создание unit-файла
-![Lesson](https://img.shields.io/badge/Lesson-otus__systemd-blue)
+![Lesson](https://img.shields.io/badge/Lesson-otus__systemd-blue?style=for-the-badge")
 ![Author](https://img.shields.io/badge/Author-Kamil%20Ibragimov-green)
 ![Date](https://img.shields.io/badge/Date-01.10.2025-yellow)
 ### 📌 Задание:   
