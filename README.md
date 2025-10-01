@@ -4,6 +4,13 @@
   <img src="https://github.com/kamil1403/svg/blob/main/svg/badges.svg">
 </p>
 
+<p align="center">
+  <img height="40" src="https://raw.githubusercontent.com/kamil1403/svg/main/svg/lesson.svg">&nbsp;
+  <img height="40" src="https://raw.githubusercontent.com/kamil1403/svg/main/svg/author.svg">&nbsp;
+  <img height="40" src="https://raw.githubusercontent.com/kamil1403/svg/main/svg/badges.svg">
+</p>
+
+
 
 <p align="center">
   <img src="https://github.com/kamil1403/otus_systemd/blob/main/screenshots/banner.jpeg" alt="Banner" width="65%">
